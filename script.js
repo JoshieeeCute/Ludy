@@ -17,13 +17,7 @@ window.onload=()=>{
 		duration: 1,
 		ease: "back.inOut"
 	});
-	tl.to(".loader-box",{
-		x: 100,
-		y: 300,
-		duration: 3
-	}); 
-	alert("All done");
+	alert("...");
 };
 
-// Preloader Section
 
