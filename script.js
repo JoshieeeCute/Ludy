@@ -1,15 +1,29 @@
-/*gsap.to(".preload-box", {
-	height: "100px",
-	width: "100px",
-	delay: 0.5,
-	duration: 1.8
-});*/
-
-gsap.to(".loader-box", {
+let tl = gsap.timeline();
+let mt = gsap.to(".loader-box", {
 	delay: 0.5,
 	rotate: 225,
 	duration: 1.4,
 	repeat: -1,
 	repeatDelay: .5,
-	ease: "back.inOut"
+	ease: "back.inOut",
+	onStart: console.log("Start"),
+	onComplete: console.log("Finish")
 });
+
+window.onload=()=>{
+	mt.pause();
+	tl.to(".loader-box", { 
+		rotate: 225,
+		duration: 1,
+		ease: "back.inOut"
+	});
+	tl.to(".loader-box",{
+		x: 100,
+		y: 300,
+		duration: 3
+	}); 
+	alert("All done");
+};
+
+// Preloader Section
+
