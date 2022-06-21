@@ -36,9 +36,11 @@ body{
 	display: grid;
 	place-items: center;
 	transform:rotate(45deg);
+	z-index:1;
 }
 .preload-container .preload-box .loader-box .lil-box{
 	width: 50%;
 	height: 50%;
 	background-color: #000;
+	z-index:5;
 }
