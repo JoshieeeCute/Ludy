@@ -17,7 +17,6 @@ window.onload=()=>{
 		duration: 1,
 		ease: "back.inOut"
 	});
-	alert("...");
 };
 
 
