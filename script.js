@@ -12,7 +12,7 @@ let mt = gsap.to(".loader-box", {
 
 window.onload=()=>{
 	mt.pause();
-	tl.to(".loader-box", { 
+	tl.to(".loader-box", {
 		rotate: 225,
 		duration: 1,
 		ease: "back.inOut"
